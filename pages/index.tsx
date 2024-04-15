@@ -48,14 +48,14 @@ const Home: NextPage<{ data: ImageProps[] }> = ({ data }) => {
           <Header />
           <>
             <Head>
-              <title>Next.js Conf 2022 Photos</title>
+              <title>{siteMetadata.title}</title>
               <meta
                 property="og:image"
-                content="https://nextjsconf-pics.vercel.app/og-image.png"
+                content="https://loikinhgiadinh.onrender.com/home-image.jpg"
               />
               <meta
                 name="twitter:image"
-                content="https://nextjsconf-pics.vercel.app/og-image.png"
+                content="https://loikinhgiadinh.onrender.com/home-image.jpg"
               />
             </Head>
             <main className="mx-auto max-w-[1960px] p-4">
@@ -79,7 +79,7 @@ const Home: NextPage<{ data: ImageProps[] }> = ({ data }) => {
                     className="group relative mb-5 block w-full cursor-zoom-in after:content after:group-hover:brightness-110 after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight"
                   >
                     <Image
-                      alt="Next.js Conf photo"
+                    alt={siteMetadata.title}
                       className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110"
                       style={{ transform: "translate3d(0, 0, 0)" }}
                       placeholder="blur"
